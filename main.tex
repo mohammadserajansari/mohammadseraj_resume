@@ -1,0 +1,304 @@
+%-------------------------
+% Resume in Latex
+% Author : Mohammad Seraj
+% Based off of: https://github.com/ansariserajmd/mohammadseraj_resume.git
+
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{0pt}
+\setlength{\columnsep}{1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\usetikzlibrary{svg.path}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \textbf{#1} \hfill \textbf{#2}\par
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Mohammad Seraj} \\ \vspace{1pt}
+    Kapsethi, Varanasi \\ \vspace{1pt}
+    \small \href{tel:#}{\raisebox{-0.1\height}{\faPhone}\ \underline{+91-9628104350} ~} \href{mailto:yourname@gmail.com}{\raisebox{-0.2\height}{\faEnvelope}\ \underline{mail.serajansari@gmail.com}} ~ 
+\href{https://www.linkedin.com/in/ansariserajmd/}{\raisebox{-0.2\height}{\faLinkedin}\ \underline{LinkedIn}} ~
+    \href{https://github.com/mohammadserajansari}{\raisebox{-0.2\height}{\faGithub}\ \underline{Github}} ~
+
+\end{center}
+\vspace{0.5mm}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {Indraprastha Institute of Information Technology, Delhi (IIIT D)}{2022 – 2024}
+    {M.Tech Computational Biology}{CGPA: 7.96/10}
+    \resumeSubheading
+    {Hindustan College of Science and Technology Farah, Mathura}{2018 – 2022}
+    {B.Tech Biotechnology}{CGPA: 7.8/10}
+    \resumeSubheading
+    {Dr. AI Memo Sunbeam School, Rohania Varanasi, Uttar Pradesh}{2016 – 2017}
+    {12th - CBSE Board}{74\%}
+    \resumeSubheading
+    {B N S School Kursato, Chaukhandi Varanasi, Uttar Pradesh}{2014 – 2015}
+    {High School - CBSE Board}{CGPA: 9.8/10}
+\resumeSubHeadingListEnd
+
+% %------RELEVANT COURSEWORK-------
+% \section{COURSE WORK}
+% \begin{multicols}{4}
+%     \begin{itemize}[itemsep=-2pt, parsep=5pt]
+%         \item Natural Language Processing (NLP)
+%         \item Machine Learning in Biomedical Application
+%         \item Big Data Mining in Healthcare
+%         \item Biomedical Image Processing
+%         \item Object Oriented Programming and Design (Python)
+%         \item Research Methods
+%         \item Project Management \& Entrepreneurship
+%     \end{itemize}
+% \end{multicols}
+% \vspace*{2.0\multicolsep}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{  \normalsize{Python, SQL}} \\
+     \textbf{\normalsize{Technologies/Frameworks:}}{  \normalsize{Machine Learning, Deep Learning, Natural Language Processing, Pandas, NumPy, Matplotlib, Seaborn, Scipy, scikit-learn, TensorFlow, PyTorch, Exploratory Data Analysis, Inferential Data Analysis, Tableau, PowerBI, Docker, AWS
+}} \\
+     \textbf{\normalsize{Developer Tools:}}{  \normalsize{VS Code, PyCharm, Google Colab }} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+
+
+%-----------PROJECTS-----------
+\section{THESIS/PROJECTS}
+
+
+
+
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{\large{\underline{Thesis - Deep learning-based Alzheimer’s disease diagnostics using medical images }}} \large{\textbf{\\ Python, TensorFlow, PyTorch}}\href{https://drive.google.com/file/d/1EKDIsHLkLoA0w_0jGkaA0g-2UfU4z-q5/view}{\raisebox{-0.1\height}{\faExternalLink} $|$ Demo}  $|$} 
+    {August 01, 2023 - May 21, 2024}
+    \resumeItemListStart
+        \resumeItem{\normalsize{Developing specialized deep learning models for medical image analysis, particularly focusing on MRI scans. The goal is to accurately diagnose Alzheimer's disease through multi-class classification and enhance accuracy in identifying different stages of the disease using advanced methodologies.}}
+
+    \resumeItemListEnd
+
+
+
+\resumeProjectHeading
+{\textbf{\large{\underline{Social Implications of NLP-Driven Healthcare Technologies:}}} \textbf{\large{Empowering Patients through Medicine}} $|$ \large{\textbf{Python, PyTorch}} \href{https://github.com/mohammadserajansari}{\raisebox{-0.1\height}{\faExternalLink}} $|$ \href{https://github.com/mohammadserajansari}{View Code} $|$ }  
+{February 2024 -- April 2024}
+\resumeItemListStart
+    \resumeItem{\normalsize{Leveraged patient feedback and advanced NLP models such as BERT to improve healthcare outcomes and precision by classifying diseases and recommending medications, while also customizing treatments through manual drug annotations.}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+
+\resumeProjectHeading
+{\textbf{\large{\underline{Emotionally Augmented Bigram Language Models for Tailored Text Generation}}} \textbf{\large{}} \large{\textbf{\\ $|$ Python, PyTorch}}\href{https://github.com/mohammadserajansari}{\raisebox{-0.1\height}{\faExternalLink} $|$ {View Code}} $|$ }  
+{January 29, 2024 -- February 5, 2024}
+\resumeItemListStart
+    \resumeItem{\normalsize{Developed a predictive language model with bigram analysis and advanced smoothing techniques for accuracy. Incorporated emotion generation to produce text with targeted feelings, enhancing versatility across contexts.}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+
+\resumeProjectHeading
+{\textbf{\large{\underline{Developing machine learning and deep learning model for Blood Brain Barrier }}} \textbf{\large{permeability prediction}} {\large{\textbf{$|$ Python, ML, Random Forest, Streamlit}}} \href{https://bbbpredict.streamlit.app/}{\raisebox{-0.1\height} {\faExternalLink} $|$ \textbf{Web App}} $|$  } {June 2023, July 2023}
+\resumeItemListStart
+    \resumeItem{\normalsize{Developing ML/DL models for BBB permeability with pubchempy, rdkit, and Mordred significantly improves the accuracy of drug brain access. Demonstrating expertise in advancing biomedical and pharmaceutical research through enhanced assessments.}}
+\resumeItemListEnd 
+\resumeSubHeadingListEnd
+
+
+
+
+
+\resumeProjectHeading
+{\textbf{\large{\underline{Classification of Liver Patients using Machine Learning and Deep Learning }}} \textbf{\large{}} {\large{\textbf{\\ $|$Python, ML, DL}}} \href{https://github.com/mohammadserajansari/-Classification-of-Liver-Patients-using-Machine-Learning-and-Deep-Learning}{\raisebox{-0.1\height} {\faExternalLink} $|$ \textbf{View Code}} $|$  } {June 2023, July 2023}
+\resumeItemListStart
+    \resumeItem{\normalsize{Leveraged genomics data analysis with machine and deep learning for precise liver cancer detection, advancing diagnostic accuracy and disease identification strategies.}}
+\resumeItemListEnd 
+\resumeSubHeadingListEnd
+
+
+\newpage
+
+\resumeProjectHeading
+{\textbf{\large{\underline{Classification of Proteins using pfeature and Model Prediction}}} \textbf{\large{with Machine Learning/Deep Learning}} {\large{\textbf{$|$ Python, ML, DL}}} \href{https://github.com/mohammadserajansari/Classification-of-Proteins-using-pfeature-and-Model-Prediction-with-Machine-Learning-Deep-Learning}{\raisebox{-0.1\height} {\faExternalLink} $|$ \textbf{View Code}} $|$  } {June 2023, July 2023}
+\resumeItemListStart
+    \resumeItem{\normalsize{Utilized pfeature for protein feature extraction, applied machine learning/deep learning models to classify proteins, achieving accurate predictions.}}
+\resumeItemListEnd 
+\resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{INTERNSHIP}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {MRD Life Science Pvt. Ltd. \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{June 2021 -- July 2021} 
+      {\underline{Intern}}{Gomti nagar, Lucknow 226010}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Hands – on industrial training with state of art lectures on Real Time PCR (RT PCR), High Performance Liquid Chromatography (HPLC), PCR, Gel Doc System and Bioreactor.}}
+  
+      \resumeItemListEnd  
+      
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+% -----------EXPERIENCE-----------
+\section{WORK EXPERIENCE }
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Indraprastha Institute of Information Technology, Delhi (IIIT D)  \href{certificate Link}{\raisebox{-0.1\height}\faExternalLink }}{August 2022 -- May 2024} 
+      {\underline{Teaching Assistant}}{New Delhi, India}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Communication Skills: Assisted in facilitating interactive sessions to enhance students' verbal and written communication abilities.}}
+        \resumeItem{\normalsize{Basic Electronics: Provided guidance and support to students in understanding fundamental concepts and practical applications in basic electronics coursework.}}
+        \resumeItem{\normalsize{Academic Work: Volunteered for the organization and administration of the PGCAT exam organized by IIIT D, ensuring a smooth testing experience for candidates.}}
+        \resumeItem{\normalsize{Nation and Her Narratives: Engaged students in discussions and activities centered around understanding historical and cultural narratives, fostering critical thinking and analytical skills.}}
+  
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+
+\section{ACHIEVEMENTS }
+      \resumeItemListStart
+        \resumeItem{\normalsize{DBT GAT-B (2022) Exam: Achieved All India Rank 133.}}
+      \resumeItemListEnd  
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+
+
+\vspace{30\medskipamount}
+
+Declaration: The above information is correct to the best of my knowledge.
+
+\medskip
+
+\noindent Mohammad Seraj \\
+Date: \today
+
+
+
+
+
+
+
+\end{document}
+
